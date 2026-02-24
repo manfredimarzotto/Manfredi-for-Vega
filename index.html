@@ -1,207 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Why I’m Excited About Vega Investments</title>
-  <style>
-    :root {
-      --bg: #090f1f;
-      --card: #172445;
-      --text: #eef3ff;
-      --muted: #b7c4e6;
-      --accent: #64e9ff;
-      --accent-2: #9f7aea;
-      --success: #34d399;
-      --warning: #f59e0b;
-      --shadow: 0 14px 30px rgba(0, 0, 0, 0.38);
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
-      background: radial-gradient(circle at 15% 5%, #1d2b56 0%, var(--bg) 48%) fixed;
-      line-height: 1.6;
-    }
-
-    .container {
-      width: min(1150px, 92%);
-      margin: 0 auto;
-      padding: 2rem 0 4rem;
-    }
-
-    .hero {
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(100, 233, 255, 0.12), rgba(159, 122, 234, 0.14));
-      padding: 2.2rem;
-      box-shadow: var(--shadow);
-      margin-top: 1rem;
-    }
-
-    .badge {
-      display: inline-block;
-      font-size: 0.78rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.28rem 0.74rem;
-      border-radius: 999px;
-      border: 1px solid rgba(52, 211, 153, 0.45);
-      color: var(--success);
-      background: rgba(52, 211, 153, 0.12);
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    h1, h2, h3 { margin-top: 0; line-height: 1.2; }
-    h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.85rem; }
-    h2 { font-size: clamp(1.2rem, 2.4vw, 1.65rem); color: var(--accent); margin-bottom: 0.7rem; }
-    h3 { font-size: 1.03rem; margin-bottom: 0.45rem; color: #dce7ff; }
-
-    p { margin-top: 0; color: var(--muted); }
-
-    .founder-voice {
-      border-left: 4px solid var(--warning);
-      background: rgba(245, 158, 11, 0.08);
-      padding: 0.75rem 0.95rem;
-      border-radius: 10px;
-      margin-top: 1rem;
-      color: #ffdca5;
-      font-weight: 600;
-    }
-
-    .grid, .split {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1.2rem;
-    }
-
-    .grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-    .split { grid-template-columns: 1fr; }
-
-    @media (min-width: 920px) {
-      .split { grid-template-columns: 1fr 1fr; }
-    }
-
-    .card {
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 14px;
-      padding: 1rem;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 1.1rem;
-      color: var(--muted);
-    }
-
-    li + li { margin-top: 0.45rem; }
-
-    .focus {
-      margin-top: 1.2rem;
-      border: 1px dashed rgba(100, 233, 255, 0.48);
-      background: rgba(10, 19, 39, 0.75);
-      border-radius: 12px;
-      padding: 1rem;
-    }
-
-    .formats {
-      margin-top: 1.2rem;
-      font-size: 0.96rem;
-      color: #a9bbe5;
-    }
-
-    .formats strong { color: #d9e8ff; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manfredi Marzotto for Vega — Product &amp; Growth</title>
+  <meta name="description" content="Manfredi Marzotto's application for the Product & Growth role at Vega — the AI-native operating system for alternative assets.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="container">
-    <section class="hero">
-      <span class="badge">Founder-Bold Narrative</span>
-      <h1>I Want to Build at Vega — Where AI Meets Private Markets Reality</h1>
-      <p>
-        I’m not looking for a narrow lane. I’m looking for leverage: a place where I can ship product, sit with clients, close outcomes, and build systems that compound. Vega’s Product &amp; Growth rotation is exactly that arena.
-      </p>
-      <p>
-        The real draw is the mission density: using AI to modernize private markets infrastructure, while owning outcomes from first principle thinking to execution in the field.
-      </p>
-      <div class="founder-voice">
-        I’m excited about this role because it rewards people who can turn ambiguity into traction — fast.
-      </div>
 
-      <div class="grid">
-        <article class="card">
-          <h3>1) AI x private markets is a high-conviction frontier</h3>
-          <ul>
-            <li>Private markets workflows are information-heavy, fragmented, and operationally expensive — ideal conditions for AI-native product wedges.</li>
-            <li>I’m motivated by building tools that reduce decision latency and improve signal quality for high-stakes operators.</li>
-          </ul>
-        </article>
+  <!-- Skip to content (accessibility) -->
+  <a href="#main" class="skip-link">Skip to main content</a>
 
-        <article class="card">
-          <h3>2) End-to-end ownership, not siloed contribution</h3>
-          <ul>
-            <li>I want responsibility from product vision and client co-design through technical delivery and measurable adoption.</li>
-            <li>Partnering with the CEO Office on GTM and deal cycles matches how I prefer to operate: product and commercial in one loop.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>3) Founder-like scope is where I create outsized value</h3>
-          <ul>
-            <li>I thrive in rotational environments where strategic projects, operations, and new bets all need momentum.</li>
-            <li>Whether it’s market expansion, events, or new initiatives, I’m strongest when the mandate is “own it and make it real.”</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="split" aria-label="Fit and execution plan">
-      <article class="card">
-        <h2>Why I’m a Strong Fit for This Specific Role</h2>
-        <ul>
-          <li><strong>Domain-first product lens:</strong> I can connect AI capability to real private markets pain points instead of shipping generic automation.</li>
-          <li><strong>Commercially informed execution:</strong> I build with an understanding of buyer psychology, trust, and enterprise adoption friction.</li>
-          <li><strong>Generalist velocity:</strong> I move between product strategy, technical detail, and growth execution without waiting for perfect certainty.</li>
-          <li><strong>Operator discipline:</strong> I run tight feedback loops, set clear metrics, and prioritize work that compounds over vanity wins.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>First 90 Days: How I’d Create Traction</h2>
-        <ul>
-          <li>Map private markets client workflows and identify the highest-value decision bottlenecks where AI can materially improve outcomes.</li>
-          <li>Define one focused product wedge with explicit adoption and time-to-value metrics.</li>
-          <li>Co-build with design + engineering + clients, then iterate rapidly on evidence, not assumptions.</li>
-          <li>Support one growth initiative tied to revenue or strategic positioning (new office narrative, partnership, or industry event engine).</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="focus card" aria-label="Achievement guidance">
-      <h2>What Types of Achievements Should Be Highlighted</h2>
-      <ul>
-        <li><strong>AI Product Impact:</strong> examples where you shipped an AI feature/workflow that improved speed, quality, or unit economics (e.g., reduced analysis time by 40%).</li>
-        <li><strong>Private Markets or Adjacent Domain Credibility:</strong> work with investment workflows, diligence, portfolio monitoring, financial data pipelines, or regulated B2B processes.</li>
-        <li><strong>0→1 Build + Adoption:</strong> launching a product line or capability from scratch and driving early customer usage/retention.</li>
-        <li><strong>GTM Execution:</strong> deals influenced, pilots converted, strategic relationships built, or pipeline generated from founder-led motion.</li>
-        <li><strong>Cross-Functional Leadership:</strong> owning initiatives across product, engineering, and commercial teams under ambiguity.</li>
+  <!-- ========== NAV ========== -->
+  <nav class="nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="Manfredi Marzotto for Vega — home">MM <span class="nav__sep">×</span> Vega</a>
+      <ul class="nav__links" id="nav-menu" role="menubar">
+        <li role="none"><a href="#why-vega" role="menuitem">Why Vega</a></li>
+        <li role="none"><a href="#proof" role="menuitem">Proof</a></li>
+        <li role="none"><a href="#plan" role="menuitem">90-Day Plan</a></li>
+        <li role="none"><a href="#experiments" role="menuitem">Experiments</a></li>
+        <li role="none"><a href="#growth-os" role="menuitem">Growth OS</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="mailto:manfredi.marzotto@gmail.com" class="btn btn--small" role="menuitem">Book a Chat</a></li>
       </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- ========== HERO ========== -->
+    <header id="hero" class="hero">
+      <div class="container">
+        <p class="hero__eyebrow">Product &amp; Growth · CEO Office · Special Projects</p>
+        <h1 class="hero__headline">CEO Office execution for Vega's <em>next chapter</em></h1>
+        <div class="hero__body">
+          <p>Vega is building the <strong>AI-native operating system for alternative assets</strong> — and the next phase demands someone at the center who turns ambiguity into shipped outcomes. That's what I do.</p>
+          <p>My investment banking background trained three things you want at the center of the company — <span class="keyword-anchor" data-keyword="analytical-thinking">analytical thinking</span> to get to the true drivers quickly, <span class="keyword-anchor" data-keyword="process-execution">process execution</span> to turn chaos into a clear plan and cadence, and <span class="keyword-anchor" data-keyword="full-ownership">full ownership</span> to coordinate across stakeholders and close loops end-to-end.</p>
+          <p>At Vega, I'd run special projects from scratch that <span class="keyword-anchor" data-keyword="compounding">compound</span>: aligning product, engineering, and GTM around a crisp narrative; building repeatable operating rhythms; and unblocking teams when priorities shift. I'd also take on investor reporting as an execution tool — tight updates, clean storylines, and a consistent metric framework that reflects reality and helps the team move faster.</p>
+          <p>I'm close to the startup ecosystem through investing in software companies, so I understand how high-growth teams actually operate: <span class="keyword-anchor" data-keyword="speed">speed</span>, focus, and constant trade-offs. As Vega expands into new geographies like New York, I can help drive the build-out with structure and momentum.</p>
+        </div>
+        <div class="hero__ctas">
+          <a href="mailto:manfredi.marzotto@gmail.com" class="btn btn--primary">Let's Build Vega's Next Chapter</a>
+          <a href="#plan" class="btn btn--secondary">See My 90-Day Plan</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== WHY VEGA ========== -->
+    <section id="why-vega" class="section section--dark" aria-labelledby="why-vega-title">
+      <div class="container">
+        <h2 class="section__title" id="why-vega-title">Why Vega</h2>
+        <p class="section__subtitle">The problem, the team, and the timing.</p>
+        <div class="grid grid--3">
+          <div class="card card--dark">
+            <h3 class="card__title">The Problem Is Real</h3>
+            <p>Alternative assets are scaling faster than the infrastructure that supports them. Every manager adding strategies, geographies, or LP segments hits the same wall: client service and distribution don't scale on spreadsheets and email. Vega fills that gap with an <strong>AI-native operating system</strong> built for the full client lifecycle.</p>
+          </div>
+          <div class="card card--dark">
+            <h3 class="card__title">Founders Who Lived It</h3>
+            <p>Alexis and Alfonso built conviction from firsthand pain inside Elliott, KKR, Blackstone, and Goldman Sachs — not from market research. That background means they know exactly what alternative managers need, and they have the relationships to ship it with real design partners.</p>
+          </div>
+          <div class="card card--dark">
+            <h3 class="card__title">Backers as Design Partners</h3>
+            <p>Apollo leading the <strong>$20M Series A</strong> — as both investor and strategic user — is a signal most enterprise startups can't manufacture. Over <strong>60 senior alternatives executives</strong> on the cap table means distribution is partially solved before a single outbound email goes out.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="formats card" aria-label="Requested deliverables">
-      <h2>Requested Add-ons Included</h2>
-      <p><strong>Yes to #4:</strong> This page is now structured to be easily adapted into:</p>
-      <ul>
-        <li>A one-page interview leave-behind (headline + fit + 90-day plan + proof points).</li>
-        <li>A short LinkedIn-style version (3 concise paragraphs + metric-backed bullets).</li>
-      </ul>
-      <p>Share your top 3 concrete wins and I’ll produce both variants next.</p>
+    <!-- ========== PROOF / CREDIBILITY ========== -->
+    <section id="proof" class="section" aria-labelledby="proof-title">
+      <div class="container">
+        <h2 class="section__title" id="proof-title">Proof</h2>
+        <p class="section__subtitle">Concrete wins — no inflated metrics. Context → Action → Result.</p>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <h3 class="proof-card__title">End-to-End Deal Execution</h3>
+            <dl class="proof-card__details">
+              <div class="proof-card__row">
+                <dt>Context</dt>
+                <dd>Live M&amp;A processes with compressed timelines and multiple senior stakeholders across legal, finance, and leadership.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Action</dt>
+                <dd>Coordinated parallel workstreams, managed dependencies, and drove the process cadence from kickoff to close.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Result</dt>
+                <dd>Deals closed on schedule with zero dropped deliverables — the same muscle that CEO Office special projects require.</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="proof-card">
+            <h3 class="proof-card__title">Startup Investing &amp; Operating Fluency</h3>
+            <dl class="proof-card__details">
+              <div class="proof-card__row">
+                <dt>Context</dt>
+                <dd>Early-stage software companies needing capital plus hands-on strategic input on growth and product.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Action</dt>
+                <dd>Invested personal capital and advised on product iteration, growth cadence, and team-scaling decisions.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Result</dt>
+                <dd>Built fluency in high-growth operations and the pragmatic trade-offs founders face daily.</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="proof-card">
+            <h3 class="proof-card__title">Investor Narratives &amp; Reporting</h3>
+            <dl class="proof-card__details">
+              <div class="proof-card__row">
+                <dt>Context</dt>
+                <dd>Complex fund information scattered across teams and formats with no consistent reporting rhythm.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Action</dt>
+                <dd>Built repeatable reporting workflows: narrative templates, KPI frameworks, and a regular cadence.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Result</dt>
+                <dd>Decision-ready materials delivered on cadence — reduced thrash and ad-hoc requests significantly.</dd>
+              </div>
+            </dl>
+          </article>
+          <article class="proof-card">
+            <h3 class="proof-card__title">Cross-Functional Coordination</h3>
+            <dl class="proof-card__details">
+              <div class="proof-card__row">
+                <dt>Context</dt>
+                <dd>Multi-stakeholder projects spanning teams and geographies with no existing playbook or process.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Action</dt>
+                <dd>Scoped, sequenced, and drove workstreams with clear owners, milestones, and decision logs.</dd>
+              </div>
+              <div class="proof-card__row">
+                <dt>Result</dt>
+                <dd>Projects shipped end-to-end — repeatable playbook now exists for future cross-team execution.</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- ========== 30 / 60 / 90 PLAN ========== -->
+    <section id="plan" class="section section--alt" aria-labelledby="plan-title">
+      <div class="container">
+        <h2 class="section__title" id="plan-title">30 / 60 / 90-Day Plan</h2>
+        <p class="section__subtitle">How I'd ramp — mixing <span class="keyword-anchor" data-keyword="process-execution">process execution</span>, special projects, and <span class="keyword-anchor" data-keyword="compounding">compounding</span> systems.</p>
+        <div class="timeline">
+          <!-- Day 30 -->
+          <div class="timeline__block">
+            <div class="timeline__marker">
+              <span class="timeline__badge">Day 30</span>
+              <span class="timeline__label">Learn &amp; Scope</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Map stakeholder priorities across CEO Office, Product, Engineering, and GTM; agree on success metrics + cadence.</li>
+              <li>Identify 1–2 high-leverage special projects and define scope, owners, milestones, and decision logs.</li>
+              <li>Draft a lightweight investor reporting rhythm: narrative template + KPI list + timeline.</li>
+            </ul>
+          </div>
+          <!-- Day 60 -->
+          <div class="timeline__block">
+            <div class="timeline__marker">
+              <span class="timeline__badge">Day 60</span>
+              <span class="timeline__label">Ship &amp; Operationalize</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Run 1 special project end-to-end and ship the first version; collect feedback and iterate fast.</li>
+              <li>Operationalize cross-team execution: weekly operating review, unblock list, and clear escalation paths.</li>
+              <li>Stand up repeatable investor update materials that reduce thrash and increase decision velocity.</li>
+            </ul>
+          </div>
+          <!-- Day 90 -->
+          <div class="timeline__block">
+            <div class="timeline__marker">
+              <span class="timeline__badge">Day 90</span>
+              <span class="timeline__label">Scale &amp; Compound</span>
+            </div>
+            <ul class="timeline__list">
+              <li>Scale the special-project playbook (intake → prioritization → delivery) so it's not person-dependent.</li>
+              <li>Support geographic expansion planning (e.g., New York): roles, timeline, dependencies, and execution plan.</li>
+              <li>Deliver a coherent "Vega story" across product progress + GTM learnings + operating cadence.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIMENTS ========== -->
+    <section id="experiments" class="section" aria-labelledby="experiments-title">
+      <div class="container">
+        <h2 class="section__title" id="experiments-title">Experiments I'd Run</h2>
+        <p class="section__subtitle">Hypotheses I'd test in the first quarter — scoped, measurable, owned.</p>
+        <div class="grid grid--3">
+          <div class="card">
+            <span class="card__tag card__tag--medium">Medium Effort</span>
+            <h3 class="card__title">CEO Office Project Intake Pipeline</h3>
+            <p class="card__hypothesis"><strong>Hypothesis:</strong> A clear intake and prioritization system increases throughput and reduces context switching.</p>
+            <p class="card__metric"><strong>Metric:</strong> Cycle time from request → decision → execution kickoff.</p>
+          </div>
+          <div class="card">
+            <span class="card__tag card__tag--low">Low Effort</span>
+            <h3 class="card__title">Investor Reporting as Execution System</h3>
+            <p class="card__hypothesis"><strong>Hypothesis:</strong> A consistent narrative + KPI cadence improves internal alignment and external confidence.</p>
+            <p class="card__metric"><strong>Metric:</strong> Time spent per update + fewer ad-hoc requests; clearer weekly decisions.</p>
+          </div>
+          <div class="card">
+            <span class="card__tag card__tag--high">High Effort</span>
+            <h3 class="card__title">NY Expansion Readiness Sprint</h3>
+            <p class="card__hypothesis"><strong>Hypothesis:</strong> A structured readiness plan reduces launch risk and accelerates hiring + GTM ramp.</p>
+            <p class="card__metric"><strong>Metric:</strong> Hiring pipeline readiness + milestone completion vs plan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GROWTH OS MODULE ========== -->
+    <section id="growth-os" class="section section--alt" aria-labelledby="growth-os-title">
+      <div class="container">
+        <h2 class="section__title" id="growth-os-title">Growth OS</h2>
+        <p class="section__subtitle">The operating layer I'd build — a funnel, a north star, and a tracker to keep experiments honest.</p>
+
+        <div class="growth-os-grid">
+
+          <!-- (a) Funnel Table -->
+          <div class="growth-os-panel growth-os-panel--wide">
+            <h3 class="growth-os-panel__title">Funnel View</h3>
+            <div class="table-wrap">
+              <table class="os-table" aria-label="Growth funnel metrics">
+                <thead>
+                  <tr>
+                    <th scope="col">Stage</th>
+                    <th scope="col">Key Metric</th>
+                    <th scope="col">Current</th>
+                    <th scope="col">Target</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="funnel-dot funnel-dot--1"></span>Awareness</td>
+                    <td>Inbound Leads / Month</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="status-pill status-pill--pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="funnel-dot funnel-dot--2"></span>Activation</td>
+                    <td>Demo → Trial Conversion</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="status-pill status-pill--pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="funnel-dot funnel-dot--3"></span>Engagement</td>
+                    <td>Weekly Active Users</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="status-pill status-pill--pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="funnel-dot funnel-dot--4"></span>Revenue</td>
+                    <td>ACV per Account</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="status-pill status-pill--pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="funnel-dot funnel-dot--5"></span>Expansion</td>
+                    <td>Net Revenue Retention</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                    <td><span class="status-pill status-pill--pending">Pending</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- (b) North-Star Metric Card -->
+          <div class="growth-os-panel">
+            <h3 class="growth-os-panel__title">North-Star Metric</h3>
+            <div class="north-star-card">
+              <div class="north-star-card__icon" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <polygon points="20,2 25,15 38,15 27,23 31,37 20,28 9,37 13,23 2,15 15,15" fill="var(--color-accent)" opacity="0.15"/>
+                  <polygon points="20,6 24,16 35,16 26,22 29,33 20,26 11,33 14,22 5,16 16,16" fill="var(--color-accent)" opacity="0.5"/>
+                  <polygon points="20,10 23,17 31,17 25,22 27,29 20,24 13,29 15,22 9,17 17,17" fill="var(--color-accent)"/>
+                </svg>
+              </div>
+              <p class="north-star-card__label">Active AUM on Platform</p>
+              <p class="north-star-card__value"><span class="todo-badge todo-badge--lg" aria-label="To be determined">TODO</span></p>
+              <p class="north-star-card__subtext">The single metric that captures whether Vega is winning: more assets managed through the platform means stickier clients and compounding revenue.</p>
+            </div>
+          </div>
+
+          <!-- (c) Experiment Tracker Mini-Table -->
+          <div class="growth-os-panel growth-os-panel--wide">
+            <h3 class="growth-os-panel__title">Experiment Tracker</h3>
+            <div class="table-wrap">
+              <table class="os-table" aria-label="Experiment tracking table">
+                <thead>
+                  <tr>
+                    <th scope="col">Experiment</th>
+                    <th scope="col">Owner</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Hypothesis</th>
+                    <th scope="col">Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CEO Office Intake Pipeline</td>
+                    <td>MM</td>
+                    <td><span class="status-pill status-pill--planned">Planned</span></td>
+                    <td>Clear intake → faster cycle time</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                  </tr>
+                  <tr>
+                    <td>Investor Reporting Cadence</td>
+                    <td>MM</td>
+                    <td><span class="status-pill status-pill--planned">Planned</span></td>
+                    <td>Consistent narrative → better alignment</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                  </tr>
+                  <tr>
+                    <td>NY Expansion Readiness Sprint</td>
+                    <td>MM</td>
+                    <td><span class="status-pill status-pill--planned">Planned</span></td>
+                    <td>Structured plan → lower launch risk</td>
+                    <td><span class="todo-badge" aria-label="To be determined">TODO</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== OPERATING SYSTEM ========== -->
+    <section id="operating-system" class="section section--dark" aria-labelledby="os-title">
+      <div class="container">
+        <h2 class="section__title" id="os-title">How I Operate</h2>
+        <p class="section__subtitle">The defaults I run on — built for <span class="keyword-anchor keyword-anchor--light" data-keyword="speed">speed</span> and <span class="keyword-anchor keyword-anchor--light" data-keyword="full-ownership">ownership</span>.</p>
+        <div class="grid grid--2">
+          <div class="os-item">
+            <h3>Start from the decision</h3>
+            <p>Define what must be true, then work backward to inputs and owners.</p>
+          </div>
+          <div class="os-item">
+            <h3>Write things down</h3>
+            <p>Crisp one-pagers, decision logs, and templates that compound over time.</p>
+          </div>
+          <div class="os-item">
+            <h3>Close loops</h3>
+            <p>Clear owners, timelines, and follow-ups. No orphaned threads.</p>
+          </div>
+          <div class="os-item">
+            <h3>Balance speed and rigor</h3>
+            <p>Move fast, but keep the narrative and metrics consistent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container container--narrow">
+        <h2 class="section__title" id="about-title">About Me</h2>
+        <div class="about-content">
+          <p class="about__text">I'm an investment banking-trained operator focused on CEO Office and special projects work in high-growth startups. I invest in software startups, which keeps me close to how great teams actually build and scale: rapid cycles, tight feedback loops, and high ownership.</p>
+          <div class="about__details">
+            <div class="about__detail">
+              <span class="about__label">Name</span>
+              <span>Manfredi Marzotto</span>
+            </div>
+            <div class="about__detail">
+              <span class="about__label">Location</span>
+              <span>London, UK</span>
+            </div>
+            <div class="about__detail">
+              <span class="about__label">Focus</span>
+              <span>Product &amp; Growth · CEO Office · Special Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ========== FOOTER / CTA ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__cta">
+          <h2>Let's build Vega's next chapter — together.</h2>
+          <p>I'm ready to start shipping. With Apollo's backing, 60+ senior execs on the cap table, and an AI-native OS the market needs — the foundation is set. Let's find 30 minutes.</p>
+          <a href="mailto:manfredi.marzotto@gmail.com" class="btn btn--primary">manfredi.marzotto@gmail.com</a>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/manfredi-marzotto/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:manfredi.marzotto@gmail.com">Email</a>
+        </div>
+        <p class="footer__note">Built for Vega by Manfredi Marzotto.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

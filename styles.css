@@ -199,22 +199,15 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-size: 1rem; font-weight: 700; color: var(--color-text);
 }
 
-/* ========== TRACTION (First 90 Days) ========== */
-.traction-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem;
+/* ========== EVIDENCE CHIPS ========== */
+.evidence-chips {
+  display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem;
 }
-.traction-item {
-  display: flex; gap: 1rem; padding: var(--space-md);
-  background: var(--color-bg); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); box-shadow: var(--shadow-sm);
+.evidence-chip {
+  display: inline-block; background: var(--color-accent-bg); color: var(--color-accent);
+  padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.75rem;
+  font-weight: 600; white-space: nowrap;
 }
-.traction-item__number {
-  font-family: var(--font-display); font-size: 1.75rem; font-weight: 700;
-  color: var(--color-accent); line-height: 1; flex-shrink: 0;
-  width: 40px;
-}
-.traction-item p { font-size: 0.92rem; color: var(--color-text); }
-.traction-item strong { color: var(--color-text); }
 
 /* ========== TWO-COL (Background / What I'd Bring) ========== */
 .two-col {
@@ -394,7 +387,8 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .nav__toggle { display: block; }
   .grid--2, .grid--3, .grid--4 { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; gap: var(--space-lg); }
-  .traction-grid { grid-template-columns: 1fr; }
+  .evidence-chips { gap: 0.3rem; }
+  .evidence-chip { font-size: 0.7rem; }
   .hero__headline { font-size: 1.75rem; }
   .section__title { font-size: 1.5rem; }
   .hero__highlights { justify-content: flex-start; }

@@ -62,18 +62,51 @@
     <!-- ========== WHY VEGA ========== -->
     <section id="why-vega" class="section section--dark" aria-labelledby="why-vega-title">
       <div class="container">
+        <!-- Vega star constellation graphic -->
+        <div class="vega-star" aria-hidden="true">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="58" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/>
+            <circle cx="60" cy="60" r="38" stroke="#818cf8" stroke-width="0.5" opacity="0.15"/>
+            <!-- Main star -->
+            <polygon points="60,12 69,42 100,42 74,60 83,90 60,72 37,90 46,60 20,42 51,42" fill="#818cf8" opacity="0.08"/>
+            <polygon points="60,22 67,44 90,44 72,57 78,80 60,67 42,80 48,57 30,44 53,44" fill="#818cf8" opacity="0.15"/>
+            <polygon points="60,30 65,46 82,46 69,55 74,72 60,63 46,72 51,55 38,46 55,46" fill="#818cf8" opacity="0.3"/>
+            <circle cx="60" cy="60" r="6" fill="#818cf8" opacity="0.6"/>
+            <circle cx="60" cy="60" r="3" fill="#a5b4fc"/>
+            <!-- Satellite stars -->
+            <circle cx="28" cy="28" r="1.5" fill="#818cf8" opacity="0.5"/>
+            <circle cx="92" cy="32" r="1" fill="#818cf8" opacity="0.4"/>
+            <circle cx="95" cy="85" r="1.5" fill="#818cf8" opacity="0.3"/>
+            <circle cx="25" cy="90" r="1" fill="#818cf8" opacity="0.4"/>
+            <circle cx="60" cy="14" r="1" fill="#a5b4fc" opacity="0.6"/>
+            <!-- Connecting lines (constellation) -->
+            <line x1="28" y1="28" x2="57" y2="57" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/>
+            <line x1="92" y1="32" x2="63" y2="57" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/>
+            <line x1="95" y1="85" x2="63" y2="63" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/>
+            <line x1="25" y1="90" x2="57" y2="63" stroke="#818cf8" stroke-width="0.5" opacity="0.2"/>
+          </svg>
+        </div>
         <h2 class="section__title" id="why-vega-title">Why Vega</h2>
         <p class="section__subtitle">The problem, the team, and the timing.</p>
         <div class="grid grid--3">
           <div class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4v28M4 18h28" stroke="#818cf8" stroke-width="2" stroke-linecap="round"/><path d="M8 8l20 20M28 8L8 28" stroke="#818cf8" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/><circle cx="18" cy="18" r="14" stroke="#818cf8" stroke-width="1.5" opacity="0.3"/></svg>
+            </div>
             <h3 class="card__title">The Problem Is Real</h3>
             <p>IR and client-service workflows break at scale without systems — every manager adding strategies, geographies, or LP segments hits the same wall. Vega fills that gap with an <strong>AI-native OS</strong> built for the full client lifecycle.</p>
           </div>
           <div class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="12" cy="14" r="5" stroke="#818cf8" stroke-width="2"/><circle cx="24" cy="14" r="5" stroke="#818cf8" stroke-width="2"/><path d="M4 30c0-4.4 3.6-8 8-8h12c4.4 0 8 3.6 8 8" stroke="#818cf8" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
             <h3 class="card__title">Founders Who Lived It</h3>
             <p>Alexis and Alfonso built conviction from firsthand pain in alternative asset management — not market research. They know the workflow gaps and have the design-partner relationships to close them.</p>
           </div>
           <div class="card card--dark">
+            <div class="card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4l4 8h9l-7 5.5 2.5 8.5L18 20l-8.5 6 2.5-8.5L5 12h9l4-8z" stroke="#818cf8" stroke-width="2" fill="none" stroke-linejoin="round"/><circle cx="18" cy="18" r="3" fill="#818cf8" opacity="0.4"/></svg>
+            </div>
             <h3 class="card__title">Backers as Design Partners</h3>
             <p>Apollo leading the <strong>$20M Series A</strong> as both investor and strategic user is a rare distribution advantage. Over <strong>60 senior alternatives executives</strong> on the cap table compound that further.</p>
           </div>
@@ -130,20 +163,29 @@
       </div>
     </section>
 
-    <!-- ========== HOW I OPERATE (moved above Background, trimmed to 3) ========== -->
+    <!-- ========== HOW I OPERATE (sequential flow with arrows) ========== -->
     <section id="operating-system" class="section section--dark" aria-labelledby="os-title">
       <div class="container">
         <h2 class="section__title" id="os-title">How I Operate</h2>
-        <div class="grid grid--3">
-          <div class="os-item">
+        <div class="op-flow">
+          <div class="op-flow__step">
+            <div class="op-flow__number">1</div>
             <h3>Start from the decision</h3>
             <p>Define what must be true, then work backward to inputs and owners.</p>
           </div>
-          <div class="os-item">
+          <div class="op-flow__arrow" aria-hidden="true">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h32M26 4l8 8-8 8" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="op-flow__step">
+            <div class="op-flow__number">2</div>
             <h3>Write things down</h3>
             <p>One-pagers, decision logs, and templates that compound over time.</p>
           </div>
-          <div class="os-item">
+          <div class="op-flow__arrow" aria-hidden="true">
+            <svg width="40" height="24" viewBox="0 0 40 24" fill="none"><path d="M0 12h32M26 4l8 8-8 8" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="op-flow__step">
+            <div class="op-flow__number">3</div>
             <h3>Close every loop</h3>
             <p>Clear owners, timelines, and follow-ups. No orphaned threads.</p>
           </div>
@@ -416,47 +458,21 @@
       </div>
     </section>
 
-    <!-- ========== ABOUT ========== -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container container--narrow">
-        <h2 class="section__title" id="about-title">About Me</h2>
-        <div class="about-content">
-          <p class="about__text">I'm an investment banking-trained operator focused on CEO Office and special projects work in high-growth startups. I invest in software startups, which keeps me close to how great teams actually build and scale: rapid cycles, tight feedback loops, and high ownership.</p>
-          <div class="about__details">
-            <div class="about__detail">
-              <span class="about__label">Name</span>
-              <span>Manfredi Marzotto</span>
-            </div>
-            <div class="about__detail">
-              <span class="about__label">Location</span>
-              <span>London, UK</span>
-            </div>
-            <div class="about__detail">
-              <span class="about__label">Focus</span>
-              <span>Product &amp; Growth · CEO Office · Special Projects</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- ========== FOOTER / CTA ========== -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer__cta">
-          <h2>If this reflects the kind of thinking you value, I'd welcome 30 minutes to talk about how I can help.</h2>
-        </div>
+        <p class="footer__cta-text">If this reflects the kind of thinking you value, I'd welcome 30 minutes to talk about how I can help.</p>
         <div class="footer__contact">
           <p class="footer__name">Manfredi Marzotto</p>
           <p class="footer__location">London</p>
           <p class="footer__tagline">Software M&amp;A Professional &middot; 6 Years of Execution Experience</p>
         </div>
         <div class="footer__links">
-          <a href="mailto:manfredi.marzotto@gmail.com" class="btn btn--primary">Email Manfredi</a>
-          <a href="https://www.linkedin.com/in/manfredi-marzotto/" target="_blank" rel="noopener" class="btn btn--secondary">LinkedIn</a>
+          <a href="mailto:manfredi.marzotto@gmail.com" class="btn btn--footer">Email Manfredi</a>
+          <a href="https://www.linkedin.com/in/manfredi-marzotto/" target="_blank" rel="noopener" class="btn btn--footer">LinkedIn</a>
         </div>
         <p class="footer__note">Built for Vega by Manfredi Marzotto.</p>
       </div>

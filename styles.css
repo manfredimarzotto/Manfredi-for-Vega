@@ -86,6 +86,11 @@ h1, h2, h3, h4 { line-height: 1.25; }
   color: var(--color-text); text-decoration: none; white-space: nowrap;
 }
 .nav__sep { color: var(--color-accent); margin: 0 0.15em; }
+.nav__sub {
+  display: block; font-family: var(--font-sans); font-size: 0.65rem;
+  font-weight: 600; color: var(--color-text-light); letter-spacing: 0.04em;
+  line-height: 1;
+}
 .nav__right { display: flex; align-items: center; gap: 1.25rem; }
 .nav__role-badge {
   background: var(--color-accent-bg); color: var(--color-accent);
@@ -153,7 +158,15 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .hero__body p { margin-bottom: 1rem; color: var(--color-text); }
 .hero__body p:last-child { margin-bottom: 0; }
 .hero__body strong { color: var(--color-text); }
+.hero__bullets {
+  list-style: disc; padding-left: 1.25rem;
+}
+.hero__bullets li {
+  margin-bottom: 0.6rem; font-size: 1.05rem; color: var(--color-text);
+  line-height: 1.5;
+}
 .hero__ctas { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.hero__ctas .btn { min-width: 220px; }
 
 /* ========== CARDS ========== */
 .card {
@@ -182,6 +195,13 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .card__tag--medium { background: #fef3c7; color: #92400e; }
 .card__tag--high { background: #fee2e2; color: #991b1b; }
 .card__hypothesis, .card__metric { font-size: 0.9rem; margin-top: 0.5rem; }
+.card__bullets {
+  list-style: disc; padding-left: 1.25rem;
+}
+.card__bullets li {
+  margin-bottom: 0.4rem; font-size: 0.92rem; line-height: 1.5;
+}
+.card--dark .card__bullets li { color: var(--color-text-on-dark); }
 
 /* ========== FIT CARDS (Strong Fit section) ========== */
 .fit-card {
@@ -207,9 +227,9 @@ h1, h2, h3, h4 { line-height: 1.25; }
   display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem;
 }
 .evidence-chip {
-  display: inline-block; background: var(--color-accent-bg); color: var(--color-accent);
-  padding: 0.2rem 0.6rem; border-radius: 100px; font-size: 0.75rem;
-  font-weight: 600; white-space: nowrap;
+  display: inline-block; background: var(--color-accent); color: #fff;
+  padding: 0.35rem 0.85rem; border-radius: 100px; font-size: 0.82rem;
+  font-weight: 700; white-space: nowrap; letter-spacing: 0.01em;
 }
 
 /* ========== TWO-COL (Background / What I'd Bring) ========== */
@@ -388,6 +408,10 @@ h1, h2, h3, h4 { line-height: 1.25; }
   min-width: 180px;
 }
 .btn--footer:hover { background: #4f46e5; border-color: #4f46e5; text-decoration: none; }
+.btn--linkedin {
+  background: #0a66c2; border-color: #0a66c2;
+}
+.btn--linkedin:hover { background: #004182; border-color: #004182; }
 .footer__note { font-size: 0.78rem; color: #475569; }
 
 /* ========== RESPONSIVE ========== */
